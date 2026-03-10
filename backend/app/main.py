@@ -1,4 +1,4 @@
-import os
+import OS
 import sys
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
@@ -47,4 +47,5 @@ async def root():
 
 if __name__ == "__main__":
     import uvicorn
+
     uvicorn.run("backend.app.main:app", host="127.0.0.1", port=8000, reload=True)
